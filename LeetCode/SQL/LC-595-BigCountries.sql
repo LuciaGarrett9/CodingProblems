@@ -5,5 +5,13 @@
 #
 # Write a solution to find the name, population, and area of the big countries.
 
+CREATE TABLE World (
+    name varchar(255),
+    continent varchar(255),
+    area int,
+    population int,
+    gdp bigint
+);
+
 SELECT name, population, area FROM World
 WHERE population>=25000000 OR area>=3000000;
